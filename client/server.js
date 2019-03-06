@@ -4,7 +4,7 @@ const port = 3000;
 
 
 
-app.use(express.static('client'));
+app.use('/:id',express.static('client'));
 
 
 app.listen(port, () => {
